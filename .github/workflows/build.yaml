@@ -16,4 +16,4 @@ jobs:
           subFolder: typescript-node
           imageName: ghcr.io/codesandbox/devcontainers/typescript-node
           cacheFrom: ghcr.io/codesandbox/devcontainers/typescript-node
-          push: always
+          push: ${{ github.event_name != 'pull_request' }}
