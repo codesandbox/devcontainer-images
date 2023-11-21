@@ -1,0 +1,19 @@
+name: Build dev container image
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  build-devcontainer-image:
+    name: Release Please
+    runs-on: default-runner-csb
+    timeout-minutes: 30
+    steps:
+      - name: Pre-build dev container image
+        uses: devcontainers/ci@v0.3
+        with:
+          subFolder: typescript-node
+          imageName: ghcr.io/codesandbox/devcontainers/typescript-node
+          cacheFrom: ghcr.io/codesandbox/devcontainers/typescript-node
+          push: always

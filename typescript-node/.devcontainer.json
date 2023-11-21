@@ -1,0 +1,8 @@
+{
+    "name": "CodeSandbox Typescript Node.js",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+    "features": {
+        "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}
+    },
+    "remoteUser": "root"
+}
