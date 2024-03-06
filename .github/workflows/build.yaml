@@ -35,6 +35,6 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           subFolder: ${{ matrix.image }}
-          imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
+          imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}:0.1
           cacheFrom: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
           push: always

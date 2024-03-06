@@ -1,6 +1,9 @@
 {
     "name": "CodeSandbox Universal",
-    "image": "mcr.microsoft.com/devcontainers/universal:2-focal",
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
     "features": {
         "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}
     },
