@@ -13,6 +13,13 @@ jobs:
       contents: read
       packages: write
 
+    strategy:
+      matrix:
+        image: [
+          "typescript-node", 
+          "universal"
+        ]
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,7 +34,7 @@ jobs:
       - name: Pre-build dev container image
         uses: devcontainers/ci@v0.3
         with:
-          subFolder: typescript-node
-          imageName: ghcr.io/codesandbox/devcontainers/typescript-node
-          cacheFrom: ghcr.io/codesandbox/devcontainers/typescript-node
+          subFolder: ${{ matrix.image }}
+          imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
+          cacheFrom: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
           push: always

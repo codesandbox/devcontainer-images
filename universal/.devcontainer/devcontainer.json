@@ -1,0 +1,8 @@
+{
+    "name": "CodeSandbox Universal",
+    "image": "mcr.microsoft.com/devcontainers/universal:2-focal",
+    "features": {
+        "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}
+    },
+    "remoteUser": "root"
+}
