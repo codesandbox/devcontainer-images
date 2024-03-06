@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-devcontainer-image:
-    name: Release Please
+    name: Build devcontainer image
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
