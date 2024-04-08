@@ -1,0 +1,11 @@
+{
+    "name": "CodeSandbox Universal",
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}
+    },
+    "remoteUser": "root"
+}
