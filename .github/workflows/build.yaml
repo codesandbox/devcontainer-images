@@ -2,7 +2,7 @@ name: Build dev container image
 on:
   push:
     branches:
-      - '*'
+      - main
 
 jobs:
   build-devcontainer-image:
@@ -36,6 +36,6 @@ jobs:
         with:
           subFolder: ${{ matrix.image }}
           imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
-          imageTag: 0.1
+          imageTag: latest,0.2
           cacheFrom: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
           push: always
