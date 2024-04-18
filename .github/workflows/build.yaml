@@ -15,10 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        image: [
-          "typescript-node", 
-          "universal"
-        ]
+        image: ["typescript-node", "universal"]
 
     steps:
       - name: Checkout
@@ -36,6 +33,6 @@ jobs:
         with:
           subFolder: ${{ matrix.image }}
           imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
-          imageTag: latest,0.2
+          imageTag: latest,0.3
           cacheFrom: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
           push: always
