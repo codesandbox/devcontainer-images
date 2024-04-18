@@ -1,0 +1,9 @@
+👋 Welcome to CodeSandbox! You are on our default devcontainer image environment. 
+   - It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://github.com/devcontainers/images/tree/main/src/universal
+   - Want to use a custom image instead? Learn more here: https://codesandbox.io/docs/learn/environment/devcontainers
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+🔥 We automatically snapshot your VM when it hibernates, so you can get back to coding within 2 seconds after a break.
+
+🗒️ We’re running VSCode in the browser, you can install your own extensions and set your own keybindings/settings. You can also open this environment in your own VSCode.
