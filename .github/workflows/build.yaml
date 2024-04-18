@@ -33,6 +33,6 @@ jobs:
         with:
           subFolder: ${{ matrix.image }}
           imageName: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
-          imageTag: latest,0.3
+          imageTag: latest,0.4
           cacheFrom: ghcr.io/codesandbox/devcontainers/${{ matrix.image }}
           push: always
