@@ -21,7 +21,7 @@ jobs:
           - image: "typescript-node"
             tag: "24"
           - image: "universal"
-            tag: "4.1.0-noble"
+            tag: "2.0.6-focal"
 
     steps:
       - name: Checkout
