@@ -2,7 +2,10 @@
     "name": "CodeSandbox Universal",
     "build": {
         "context": ".",
-        "dockerfile": "Dockerfile"
+        "dockerfile": "Dockerfile",
+        "args": {
+            "TAG": "${localEnv:TAG}"
+        }
     },
     "features": {
         "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}

@@ -1,6 +1,12 @@
 {
     "name": "CodeSandbox Typescript Node.js",
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile",
+        "args": {
+            "TAG": "${localEnv:TAG}"
+        }
+    },
     "features": {
         "ghcr.io/codesandbox/devcontainer-features/codesandbox:0.1.4": {}
     },

@@ -1,4 +1,5 @@
-FROM mcr.microsoft.com/devcontainers/universal:2-focal
+ARG TAG=4.1.0-noble
+FROM mcr.microsoft.com/devcontainers/universal:${TAG}
 
 USER root
 
